@@ -10,6 +10,7 @@ $icon-font-path: '../fonts/';
 
 /* === PARTIALS ===*/
 @import "partials/variables";
+@import "partials/landingPage";
 
 /* === HELPERS === */
 
@@ -65,87 +66,8 @@ hr {
   border-top: 5px solid black;
 }
 
-/* === LANDING PAGE === */
-#landing-page {
-  position: relative;
-  height: 100vh;
-  background: $landingBackground;
-}
-
-/* === MAIN NAV === */
-// GENERAL NAV STYLES
-.navbar {
-  border-radius: 0px;
-}
-
-.navbar-default {
-  background-color: $landingBackground;
-  border-color: $clearBlack;
-}
-
-// NAV DROPDOWN
-.menu-toggle {
-  position: fixed;
-  margin-top: .8em;
-  margin-bottom: .8em;
-}
-
-// CENTERED LOGO
-.nav-logo {
-  margin-top: 1.0em;  
-  padding-bottom: 1.0em;
-}
-
-// DROPDOWN
-.dropdown-menu {
-  background-color: $landingBackground;
-}
-
-div#nav {
-  background-color: back;
-  -webkit-transition: width .40s, height .40s; /* For Safari 3.1 to 6.0 */
-  transition: width .40s, height .40s;
-}
-
-div#nav:hover {
-  width: 300px;
-  height: 300px;
-}
-
-// SOCIAL ICONS
-.social-icons {
-  display: none;
-  padding-top: 1.8em;
-
-}
-
-.social-icons i {
-  padding-left: .5em;
-  
-}
-
-
-@media (min-width: 992px) { 
-  .social-icons {
-    display: block;
-  }
-}
-
-#main-jumbotron {
-  position: absolute;
-  top: 10%;
-  margin-top: 15%;
-  left: 0;
-  width: 100%;
-  background-color: $landingBackground;
-}
-
-#arrow {
-  margin-top: 13em;
-}
-
 /* === #FEATURES === */
-#features {
+section#features {
   
 }
 

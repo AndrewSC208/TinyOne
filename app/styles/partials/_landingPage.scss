@@ -1,0 +1,87 @@
+/* === LANDING PAGE === */
+section#landing-page {
+  position: relative;
+  height: 100vh;
+  background: $landingBackground;
+
+	// adding some padding to the nav -> this will scrink when the document scrolls down for the first time.
+	nav .container {
+
+	}
+	
+	.largeNav {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	/* === MAIN NAV === */
+	// GENERAL NAV STYLES
+	.navbar {
+	  border-radius: 0px;
+	}
+	
+	.navbar-default {
+	  background-color: $landingBackground;
+	  border-color: $clearBlack;
+	}
+	
+	// NAV DROPDOWN
+	.menu-toggle {
+	  position: fixed;
+	  margin-top: .8em;
+	  margin-bottom: .8em;
+	}
+	
+	// CENTERED LOGO
+	.nav-logo {
+	  margin-top: 1.0em;  
+	  padding-bottom: 1.0em;
+	}
+	
+	// DROPDOWN
+	.dropdown-menu {
+	  background-color: $landingBackground;
+	}
+	
+	div#nav {
+	  background-color: back;
+	  -webkit-transition: width .40s, height .40s; /* For Safari 3.1 to 6.0 */
+	  transition: width .40s, height .40s;
+	}
+	
+	div#nav:hover {
+	  width: 300px;
+	  height: 300px;
+	}
+	
+	// SOCIAL ICONS
+	.social-icons {
+	  display: none;
+	  padding-top: 1.8em;
+	
+	}
+	
+	.social-icons i {
+	  padding-left: .5em;
+	  
+	}
+	
+	
+	@media (min-width: 992px) { 
+	  .social-icons {
+	    display: block;
+	  }
+	}
+	
+	#main-jumbotron {
+	  position: absolute;
+	  margin-top: 6%;
+	  left: 0;
+	  width: 100%;
+	  background-color: $landingBackground;
+	}
+	
+	#arrow {
+	  margin-top: 13em;
+	}
+}

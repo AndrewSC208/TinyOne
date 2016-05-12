@@ -1,0 +1,5 @@
+1. finish the scroll animation on the navigation
+2. Fix the nav menu trigger and dropdown on nav
+3. address the main landing page spacing, and the down arrow and how to build he functionality
+4. Focus on the features section after
+	a. use generated content css to append the icon to each feature
