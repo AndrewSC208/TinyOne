@@ -27,10 +27,6 @@ $icon-font-path: '../fonts/';
   
 }
 
-.caption {
-  width: 50%;
-}
-
 .upperCase {
   text-transform: uppercase;
 }
@@ -132,6 +128,11 @@ h3 .price {
   border-radius: 0px;
   padding: 1em 5em 1em 5em;
  
+ &:hover,
+ &:active {
+  background-color: $accentColor;
+  color: #000;
+ }
 }
 
 .work-container {
@@ -209,7 +210,9 @@ footer h1 {
 
 
 /* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
+@media (max-width: 767px) {
+  
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 

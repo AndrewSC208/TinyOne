@@ -1,5 +1,13 @@
-1. finish the scroll animation on the navigation
-2. Fix the nav menu trigger and dropdown on nav
-3. address the main landing page spacing, and the down arrow and how to build he functionality
-4. Focus on the features section after
-	a. use generated content css to append the icon to each feature
+Jquery Plug-ins to build and learn animations
+1. Dropdown menu slide down and out to raveal nav meanu.
+2. Print out the main heading like a typewriter
+3. Bounce the arrow 
+4. Smooth scroll to each section when arrow clicked [add and up arrow when needed]
+
+BUILD FROM THE SMALLEST MEDIA QUERY UP. SLOWLY SLIDE OPEN THE BROWSER WHEN THE SITE LOOKS LIKE CRAP THEN ADD A BREAK POINT. 
+
+Todo's:
+1. Break-up main.scss files into smaller component size files
+2. Fix the spacing for the landing page
+3. Write the jquery plug-in's
+4. Fix the spacing for rest of the site

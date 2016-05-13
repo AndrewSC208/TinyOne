@@ -6,7 +6,8 @@ section#landing-page {
 
 	// adding some padding to the nav -> this will scrink when the document scrolls down for the first time.
 	nav .container {
-
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 	
 	.largeNav {
@@ -41,6 +42,10 @@ section#landing-page {
 	// DROPDOWN
 	.dropdown-menu {
 	  background-color: $landingBackground;
+
+		a:hover, a:active {
+	  		background-color: $accentColor;
+		}
 	}
 	
 	div#nav {
@@ -66,6 +71,21 @@ section#landing-page {
 	  
 	}
 	
+	.btn {
+		margin: 1em 0 0 0;
+	}
+
+	/* Extra small devices (phones, less than 768px) */
+	@media (min-width: 1px) {
+  		.btn {
+  			margin: 0 0 0 0;
+  		}
+
+  		#arrow {
+  			margin: 0 0 0 0;
+  		}
+	}
+
 	
 	@media (min-width: 992px) { 
 	  .social-icons {
@@ -75,13 +95,17 @@ section#landing-page {
 	
 	#main-jumbotron {
 	  position: absolute;
-	  margin-top: 6%;
+	  margin-top: 20%;
 	  left: 0;
 	  width: 100%;
 	  background-color: $landingBackground;
+
+   	    .caption {
+  			width: 100%;
+	    }
 	}
 	
 	#arrow {
-	  margin-top: 13em;
+	  margin-top: 4em;
 	}
 }
