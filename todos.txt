@@ -9,5 +9,6 @@ BUILD FROM THE SMALLEST MEDIA QUERY UP. SLOWLY SLIDE OPEN THE BROWSER WHEN THE S
 Todo's:
 1. Break-up main.scss files into smaller component size files
 2. Fix the spacing for the landing page
-3. Write the jquery plug-in's
-4. Fix the spacing for rest of the site
+3. Add the srinking nav animation.
+4. Write the jquery plug-in's
+5. Fix the spacing for rest of the site
