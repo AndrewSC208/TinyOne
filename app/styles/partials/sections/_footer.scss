@@ -1,0 +1,37 @@
+/* === FOOTER === */
+section#footer {
+	background-color: black;
+	height: 100%;
+	color: white;
+	margin-top: 50px;
+	padding-top: 15px;
+    padding-bottom: 15px;
+
+	input {
+		padding: .8em 1.5em;
+		margin-bottom: 1.2em;
+		margin-left: 1em;
+		color: #000;
+
+		&::placeholder {
+			color: $accentColor;
+		}
+	}
+	
+	button {
+		
+		background-color: #fff;
+		color: black;
+
+		&:hover,
+		&:active {
+			background-color: $accentColor;
+		}
+
+	}
+	
+
+	h2 {
+ 		color: white;
+	}
+}

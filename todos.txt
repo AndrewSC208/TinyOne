@@ -1,18 +1,14 @@
 Jquery Plug-ins to build and learn animations
 1. Dropdown menu slide down and out to raveal nav menu.
 2. Print out the main heading like a typewriter
-3. Bounce the arrow 
-4. Smooth scroll to each section when arrow clicked [add and up arrow when needed]
+3. Smooth scroll to each section when arrow clicked [add and up arrow when needed]
 
 BUILD FROM THE SMALLEST MEDIA QUERY UP. SLOWLY SLIDE OPEN THE BROWSER WHEN THE SITE LOOKS LIKE CRAP THEN ADD A BREAK POINT. 
 
 Todo's:
-1. Break-up main.scss files into smaller component size files
-2. Fix the spacing for the landing page
-3. Add the srinking nav animation.
-4. Write the jquery plug-in's
 5. Fix the spacing for rest of the site
 6. Fix the font size through out the whole site
+	- make the headers for each section larger
 7. Icon's for the features
 8. Button size in the pricing section
 9. Our work section should only have 2 in each row, for a total of 4 on the page
@@ -20,3 +16,8 @@ Todo's:
 11. Place holder text should be black for all forms and buttons
 12. Maybe just 4 different features, 6 seems like to many 
 13. I need to do something with the social icons, right now they are way to plan. 
+
++++++
+Non-priority Todo's:
+4. Write the jquery plug-in's
++++++

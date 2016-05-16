@@ -1,35 +1,56 @@
 'use strict';
-$(function() {
+$(document).ready(function(){
 
-  // navbar scroll var's:
   var viewWindow = $(window),
-      n          = $('nav');
+      n = $('nav'),
+      arrow = $('#arrow');
 
   // Navbar animation:
+  n.addClass('largeNav');
   viewWindow.scroll(function() {
-
-    if(viewWindow.scrollTop() === 0) {
-      // srink nav
-      
+    if(viewWindow.scrollTop() !== 0) {
+      n.removeClass('largeNav', 300);
     } else {
-      // bigger nav
-      
+      n.addClass('largeNav', 300);
     }
-
   });
 
-  // Arrow bounce animation:
-  var arrow = $('#arrow');
+  // arrow bounce animation: [THIS WILL WORK FOR NOW BUT I THINK THAT IT MIGHT BE FUN TO EXPAND ON THIS AT A LATER TIME]
+  function bounceArrowDown(){
+    arrow.animate({
+      top: '+=7px'
+    }, 400);
+  }
 
-  // arrow.animate({
-  //   'top' : '+=10px'
-  // }, {
-  //   duration: 1000,
-  //   function(){
-  //     arrow.animate({
-        
-  //     })
-  //   }
-  // });
+  function bounceArrowUp(){
+    arrow.animate({
+      top: '-=7px'
+    }, 400);
+  }
 
+  for(var i = 0; i < 100; i++) {
+    bounceArrowDown();
+    bounceArrowUp();
+  }
+
+  // TyperWriter effect: [GOAL: To print out the main h1 like someone is typing it]
+
+  // close the nav dropdown when link clicked: [ I could navigate this to make it look a little better ]
+  $('.dropdown-menu a').click(function() {
+    $('.dropdown').removeClass('open');
+  });
+
+  // scroll transition to sections!
+  $(function () {
+
+    $('a[href^="#"]').click(function(event) {
+    var id = $(this).attr('href');
+    var offset = 0;
+    var target = $(id).offset().top - offset;
+
+    $('html, body').animate({ scrollTop: target }, 500);
+      event.preventDefault();
+    });
+
+  });
 });

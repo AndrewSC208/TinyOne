@@ -1,0 +1,39 @@
+/* === CONTACT === */
+section#contact {
+
+	margin-top: 60px;
+	padding-top: 45px;
+
+	.spacer {
+		padding-top: 3%;
+		padding-bottom: 3%;
+	}
+	
+		input, textarea {
+	  		border: 2px solid black;
+	  		width: 80%;
+	  		padding-top: 10px;
+	  		margin-top: 15px;
+	  		padding: .8em 1.5em;
+
+	  		&::placeholder {
+	  			color: $accentColor;
+	  		}
+		}
+	
+		button {
+	 		margin-top: 15px;
+	 		width: 80%;
+
+	 		&:hover,
+	 		&:active {
+	 			background-color: $accentColor;
+	 		}
+		}
+
+	
+	.contactBtn {
+	  background-color: black;
+	  color: white;
+	}
+}

@@ -5,236 +5,33 @@ $icon-font-path: '../fonts/';
 // endbower
 
 /* === FONTS === */ 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300);
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+// @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300);
 
 /* === PARTIALS ===*/
 @import "partials/variables";
-@import "partials/landingPage";
+@import "partials/globals";
+@import "partials/helpers";
 
-/* === HELPERS === */
-
-// whole block
-.center-block {
-  width: 100%;
-  text-align: center;
-  margin: 0 auto;
-}
-
-// individual blocks
-.center {
-  text-align: center;
-  
-}
-
-.upperCase {
-  text-transform: uppercase;
-}
-
-.note {
-  margin-top: -.8em;
-}
-
-.intro {
-  padding-top:8%;
-}
-
-.spacer {
-  padding-top:5%;
-  padding-bottom:5%;
-}
-
-
-
-/* === GLOBALS === */
-body {
-  height: 100%;
-  font-family: $font-stack;
-  color: $fontColor;
-}
-
-h1 {
-  color: $headingColor;
-}
-
-hr {
-  border-width: 5px;
-  border-top: 5px solid black;
-}
-
-/* === #FEATURES === */
-section#features {
-  margin-top: 100px;
-}
-
-.features-intro {
-  padding: 8% 8%;
-}
-
-.feature-icon {
-  padding-top: 1.2em;
-}
-
-.feature-container {
-  width: 100%;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.feature-row-container {
-  
-}
-
-#pricing {
-  padding-top: 10em;
-  padding-bottom: 10em;
-}
-
-.price-block {
-  padding-top: 3em;
-}
-
-.pricing-intro {
-  padding-bottom: 5em;
-}
-
-.img-circle {
-  background-color: #B8B8B8;
-  width: 10em;
-  height: 10em;
-}
-
-.img-circle i {
-  margin-top: .55em;
-}
-
-.pricing-title {
-  padding-top: 2em;
-  padding-bottom: .5em;
-}
-
-.price-underline {
-  border-bottom: 2px solid black;
-  padding-bottom: .05em;
-}
-
-h3 .price {
-  margin-bottom: 20px;
-}
-
-.btn {
-  border: 2px solid black;
-  background-color: rgba(0,0,0,.0);
-  border-radius: 0px;
-  padding: 1em 5em 1em 5em;
- 
- &:hover,
- &:active {
-  background-color: $accentColor;
-  color: #000;
- }
-}
-
-.work-container {
-  padding-top: 3em;
-  padding-bottom: 7em;
-}
-
-/* === TEAM === */
-#team {
-  padding-top: 10em;
-}
-
-.team-member {
-  padding-top: 5em;
-}
-
-/* === STATS & TESTAMONIALS === */
-#stats {
-  padding-top: 10em;
-}
-
-.fa-puzzle-piece {
-  padding-left: 17px;
-}
-
-#quote {
-  padding-top: 4em;
-  width: 60%;
-}
-
-.fa-quote-right {
-  padding-top: 1.2em;
-}
-
-/* === CONTACT === */
-form input, textarea {
-  border: 2px solid black;
-  width: 80%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 15px;
-}
-
-form button {
-  margin-top: 15px;
-}
-
-.contactBtn {
-  background-color: black;
-  color: white;
-}
-
-/* === FOOTER === */
-footer {
-  background-color: black;
-  color: white;
-}
-
-footer h1 {
-  color: white;
-}
-
-#footer {
-  height: 100%;
-
-}
-
-.footer {
-  background-color: white;
-  color: black;
-  padding: .8em 1.5em;
-  margin-bottom: 1.2em;
-  margin-left: 1em;
-}
+/* === SECTIONS ===*/
+@import "partials/sections/landingPage";
+@import "partials/sections/features";
+@import "partials/sections/pricing";
+@import "partials/sections/portfolio";
+@import "partials/sections/team";
+@import "partials/sections/stats";
+@import "partials/sections/contact";
+@import "partials/sections/footer";
 
 
 /* Extra small devices (phones, less than 768px) */
-@media (max-width: 767px) {
-
-}
+/* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-  .feature-container {
-    width: auto;
-    text-align: left;
-  }
-}
+//@media (min-width: @screen-sm-min) {}
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-  
-  section {
-    position: relative;
-    height: 100vh;
-  }
-
-  .feature-row-container {
-    padding-bottom: 8%;
-  }
-
-}
+//@media (min-width: @screen-md-min) {}
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
+//@media (min-width: @screen-lg-min) {}

@@ -1,0 +1,30 @@
+/* === HELPERS === */
+// whole block
+.center-block {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+// individual blocks
+.center {
+  text-align: center;
+  
+}
+
+.upperCase {
+  text-transform: uppercase;
+}
+
+.note {
+  margin-top: -.8em;
+}
+
+.intro {
+  padding-top:8%;
+}
+
+.spacer {
+  padding-top:5%;
+  padding-bottom:5%;
+}

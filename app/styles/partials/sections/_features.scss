@@ -1,0 +1,44 @@
+/* === #FEATURES === */
+section#features {
+  margin-top: 100px;
+  padding-top: 50px;
+
+  .features-intro {
+    padding: 8% 8%;
+  }
+
+  .feature-icon {
+    padding-top: 1.2em;
+  }
+
+  .feature-container {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: 768px) { 
+    .feature-container {
+      width: auto;
+      text-align: left;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .feature-row-container {
+      padding-bottom: 8%;
+    }
+
+    i {
+      font-size: 3.5em;
+      margin-top: 25px;
+    }
+  }
+}
+
